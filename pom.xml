@@ -7,6 +7,20 @@
     <groupId>jettoscope</groupId>
     <artifactId>jettoscope</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+    <repository>
+        <id>cloudbees-snapshot-repository</id>
+        <url>https://repository-hazelcast-l337.forge.cloudbees.com/snapshot/</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -20,13 +34,20 @@
         </plugins>
     </build>
     <dependencies>
-
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
             <artifactId>jsr305</artifactId>
             <version>3.0.1</version>
         </dependency>
 
+
+    <dependency>
+        <groupId>com.hazelcast.jet</groupId>
+        <artifactId>hazelcast-jet</artifactId>
+        <version>0.4-SNAPSHOT</version>
+    </dependency>
     </dependencies>
+
+
 
 </project>

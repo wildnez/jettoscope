@@ -1,3 +1,5 @@
+package org.hazelcast.jettoscope;
+
 import com.hazelcast.config.NetworkConfig;
 import com.hazelcast.core.IMap;
 import com.hazelcast.jet.*;

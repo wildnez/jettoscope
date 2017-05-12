@@ -1,3 +1,5 @@
+package org.hazelcast.jettoscope;
+
 import com.hazelcast.jet.AbstractProcessor;
 
 import javax.annotation.Nonnull;
